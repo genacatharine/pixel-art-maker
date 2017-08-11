@@ -26,11 +26,11 @@ document.addEventListener("DOMContentLoaded", function () {
   function addDiv() {
     var container = document.getElementById("container");
 
-    for (var i = 0; i < 100; i++) {
+    for (var i = 0; i < 1000; i++) {
       var id = `pixel-${i}`;
       var pixel= document.createElement("div");
       pixel.setAttribute("id", id);
-      pixel.setAttribute("style", "width: 10px; height: 10px; border: 1px solid black;");
+      pixel.classList.add("pixelClass")
       container.appendChild(pixel);
     }
   }
