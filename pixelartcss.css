@@ -1,0 +1,25 @@
+#container {
+    margin: 0 auto;
+    background-color: #eee;
+    width: 800px;
+    height: 400px;
+}
+.colorSelector {
+    background-color: rgb(68, 204, 97);
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+
+}
+
+.pixelClass {
+  float: left
+  background-color: white;
+  width: 25px;
+  height: 25px;
+  border: 1px solid black;
+}
+
+h1 {
+  text-align: center;
+}
