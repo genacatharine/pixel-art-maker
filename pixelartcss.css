@@ -1,6 +1,6 @@
 #container {
     margin: 0 auto;
-    background-color: #eee;
+    /*background-color: #eee;*/
     width: 800px;
     height: 400px;
 }
@@ -16,8 +16,9 @@
   float: left;
   display: inline-block;
   background-color: white;
-  width: 25px;
-  height: 25px;
+  width: 15px;
+  height: 15px;
+
   border: 1px solid black;
 }
 
