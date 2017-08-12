@@ -1,59 +1,37 @@
-// function createPixel(text){
-//
 
-// let pixel=document.createElement('pixel')
-// pixel.innerHTML = text;
-// div.appendChild(pixel);
-// }
-//
-//
 
-// let button= document.getElementById('red-button');
-// button.addEventListener("click", function() {
-//   console.log("you click the button!!", button)
-//   createDiv("bill's excellent")
-//
-//   })
+document.addEventListener("DOMContentLoaded", function() {
+
+      for (var i = 0; i < 806; i++) {
+      // create pixel divs
+      var element = document.createElement("div");
+      // add class pixel to div
+      element.classList.add("pixel");
+      // locate the pixel container
+      var pixelContainer= document.getElementById("pixelContainer");
+      pixelContainer.appendChild(element);
+      }
+
+  var currentColor="";
+  var sidebar= document.getElementById("sidebar");
+
+  // Grab color and reassign current color
+  sidebar.addEventListener('click', function(event){
+
+     currentColor = window.getComputedStyle(event.target).backgroundColor;
+
+  // Putting picked color onto pixel
+  var pixelContainer1=document.getElementById("pixelContainer")
+
+  pixelContainer1.addEventListener('click', function(event){
+  event.target.style.backgroundColor= currentColor;
+
+  })
+
+
+   });
+//   sidebar.addEventListener('click', function(event){
+//   currentColor= window.getComputedStyle(event.target).backgroundColor;
+//   console.log(currentColor)
 // })
-
-// var container=document.createElement("div");
-// container.setAttribute("class", "container");
-//
-// var colorSelector= document.createElement("div");
-// colorSelector.setAttribute("class", "colorSelector");
-
-document.addEventListener("DOMContentLoaded", function () {
-  function addDiv() {
-    var container = document.getElementById("container");
-
-    for (var i = 0; i < 1000; i++) {
-      var id = `pixel-${i}`;
-      var pixel= document.createElement("div");
-      pixel.setAttribute("id", id);
-      pixel.classList.add("pixelClass")
-      container.appendChild(pixel);
-    }
-  }
-
-  addDiv();
 });
-
-// pixel.style.float="left";
-// pixel.style.border="1px solid black";
-// pixel.style.width="15px";
-// pixel.style.height="15px";
-// }
-// })
-
-
-//   toAdd.appendChild(newDiv);
-// }
-// document.appendChild(toAdd);
-// }
-
-//   img.addEventListener('click' imgLog);
-// });
-
-// body
-// div with colors
-// div with pixels
