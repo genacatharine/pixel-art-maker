@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function() {
 
-      for (var i = 0; i < 806; i++) {
+      for (var i = 0; i < 1088; i++) {
       // create pixel divs
       var element = document.createElement("div");
       // add class pixel to div
